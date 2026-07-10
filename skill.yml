@@ -1,0 +1,40 @@
+name: top-fund-managers-views
+version: 1.0.0
+description: 中国顶流基金经理（张坤·谢治宇·高楠）观点库 Agent Skill
+author: personal project
+sources:
+  - https://www.efunds.com.cn/manager/721.shtml
+  - https://fund.eastmoney.com/manager/30198031.html
+  - https://fund.eastmoney.com/manager/30561920.html
+license: MIT
+managers:
+  - name: 张坤
+    company: 易方达基金
+    representative_fund: 易方达蓝筹精选混合(005827)
+    corpus_dir: references/managers/张坤/corpus/
+    method_file: references/managers/张坤/method.md
+    fund_data_dir: references/managers/张坤/fund_data/
+  - name: 谢治宇
+    company: 兴证全球基金
+    representative_fund: 兴全合润混合(163406)
+    corpus_dir: references/managers/谢治宇/corpus/
+    method_file: references/managers/谢治宇/method.md
+    fund_data_dir: references/managers/谢治宇/fund_data/
+  - name: 高楠
+    company: 永赢基金
+    representative_fund: 永赢睿信混合A(019431)
+    corpus_dir: references/managers/高楠/corpus/
+    method_file: references/managers/高楠/method.md
+    fund_data_dir: references/managers/高楠/fund_data/
+scripts:
+  - scripts/search_corpus.py
+  - scripts/fund_lookup.py
+  - scripts/fetch_any_fund.py
+  - scripts/score_fund.py
+  - scripts/build_index.py
+  - scripts/build_fund_list.py
+  - scripts/fetch_fund_data.py
+dependencies:
+  - requests
+  - beautifulsoup4
+  - lxml
