@@ -149,10 +149,8 @@
 3. 天天基金：大成优势企业混合A基金品种页  
    https://fund.eastmoney.com/008271.html
 
-4. 基金经理列表截图页面  
-   来源 URL：待补充  
-   采集日期：2026-07-11
-
+4. 大成基金管理有限公司：基金经理
+   https://www.dcfund.com.cn/main/home/fundmanatopic/index.shtml
 ---
 
 ## 注意事项
